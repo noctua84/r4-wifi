@@ -22,7 +22,7 @@ jobs:
     - name: Build project
       run: pio run -e uno_r4_wifi
     - name: Archive firmware
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: firmware
         path: .pio/build/uno_r4_wifi/firmware.bin
