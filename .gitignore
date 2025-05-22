@@ -1,0 +1,9 @@
+# IDE congig
+.idea
+.vscode
+
+# Build directories
+.pio
+
+# Config files
+/cfg/wifi.h

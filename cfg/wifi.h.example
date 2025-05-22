@@ -1,0 +1,10 @@
+// This file is an example configuration for Wi-Fi credentials.
+// You should rename this file to wifi.h and fill in your Wi-Fi credentials.
+
+#ifndef WIFI_EXAMPLE_H
+#define WIFI_EXAMPLE_H
+
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASSWORD "your_wifi_password"
+
+#endif //WIFI_EXAMPLE_H
