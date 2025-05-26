@@ -1,5 +1,6 @@
 //
 // Created by Markus Möller on 26.05.2025.
+// Minor Bug fix on vibration monitoring by Markus Möller on 27.05.2025
 //
 
 #include "mpu6050monitor.h"
@@ -50,7 +51,7 @@ void MPU6050Monitor::printSensorData(const MPU6050::SensorData &data, const bool
  * @param samples Number of samples to collect (default is 100).
  * @param delay_ms Delay between samples in milliseconds (default is 50).
  */
-void MPU6050Monitor::monitorVibration(const uint16_t samples = 100, const uint16_t delay_ms = 50, float) const {
+void MPU6050Monitor::monitorVibration(const uint16_t samples = 100, const uint16_t delay_ms = 50) const {
     Serial.println("Starting vibration monitoring...");
     Serial.println("Time,Magnitude");
 

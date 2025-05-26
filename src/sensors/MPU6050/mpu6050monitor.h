@@ -1,5 +1,6 @@
 //
 // Created by Markus Möller on 26.05.2025.
+// Minor refactoring by Markus Möller on 27.05.2025
 //
 
 #ifndef MPU6050MONITOR_H
@@ -31,7 +32,7 @@ public:
     static void printSensorData(const MPU6050::SensorData &data, bool compact = false);
 
     // Monitors vibration data from the MPU6050 sensor
-    void monitorVibration(uint16_t samples, uint16_t delay_ms, float vib_mag) const;
+    void monitorVibration(uint16_t samples, uint16_t delay_ms) const;
 private:
     MPU6050& mpu; // Reference to the MPU6050 sensor object
     bool monitoring = false; // Flag to indicate if monitoring is active
